@@ -2,24 +2,40 @@
 
 {% block content %}
 
-<div class="container">
+<div class="container align-middle">
     <br>
-    <form method="post" action="{% url 'index' %}" id="user_reg">
+    <h3 class="text-center mt-md-5">Junior Code Cracker 2K18</h3>
+    <form method="post" action="{% url 'index' %}" id="user_reg" class="mt-4 p-3">
         {% csrf_token %}
-        <h3 class="text-center">Junior Code Cracker Registration</h3>
-        <label>Team Name :</label>
-        {{ form.team_name }}
-        <label>Player 1 Name :</label>
-        {{ form.player_one_name }}
-        <label>Player 2 Name :</label>
-        {{ form.player_two_name }}
+        <div class="row">
+          <div class="col">
+            <label>Team Handle :</label>
+          </div>
+          <div class="col">
+              {{ form.team_name }}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label>Player 1 :</label>
+          </div>
+          <div class="col">
+              {{ form.player_one_name }}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+              <label>Player 2 :</label>
+          </div>
+          <div class="col">
+              {{ form.player_two_name }}
+          </div>
+        </div>
         <br>
         <div class="text-center">
-            <input type="submit" class="btn btn-primary" name="register" value="Register For JCC">
+            <input type="submit" class="btn btn-light" name="register" value="Submit!">
         </div>
     </form>
 </div>
 
 {% endblock %}
-
-
