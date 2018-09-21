@@ -1,19 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
-body{
+/* body{
   background-image: url("../images/image1.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+  font-family: 'Press Start 2P', cursive;
+  color:white;
+} */
+
+body .container{
+  max-height: 100vh;
+  position: relative;
   background-size: cover;
   background-blend-mode: darken;
   font-family: 'Press Start 2P', cursive;
   color:white;
 }
 
-body .container{
-  max-height: 100vh;
-}
-
 form{
   background: rgba(255,255,255,.2);
   font-size: 0.7rem;
+}
+input{ 
+  margin: 0.5rem;
 }
 .reg-suc{
   margin-top:40vh;
