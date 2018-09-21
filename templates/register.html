@@ -5,31 +5,40 @@
 <div class="container align-middle">
     <br>
     <h3 class="text-center mt-md-5">Junior Code Cracker 2K18</h3>
+    <br>
+    {% if is_team_name_taken == True %}
+
+    <div class="alert alert-info" role="alert">
+        This team name is already taken !! Use a different one
+    </div>
+
+    {% endif %}
+    <br>
     <form method="post" action="{% url 'index' %}" id="user_reg" class="mt-4 p-3">
         {% csrf_token %}
         <div class="row">
-          <div class="col">
-            <label>Team Handle :</label>
-          </div>
-          <div class="col">
-              {{ form.team_name }}
-          </div>
+            <div class="col">
+                <label>Team Handle :</label>
+            </div>
+            <div class="col">
+                {{ form.team_name }}
+            </div>
         </div>
         <div class="row">
-          <div class="col">
-            <label>Player 1 :</label>
-          </div>
-          <div class="col">
-              {{ form.player_one_name }}
-          </div>
+            <div class="col">
+                <label>Player 1 :</label>
+            </div>
+            <div class="col">
+                {{ form.player_one_name }}
+            </div>
         </div>
         <div class="row">
-          <div class="col">
-              <label>Player 2 :</label>
-          </div>
-          <div class="col">
-              {{ form.player_two_name }}
-          </div>
+            <div class="col">
+                <label>Player 2 :</label>
+            </div>
+            <div class="col">
+                {{ form.player_two_name }}
+            </div>
         </div>
         <br>
         <div class="text-center">
@@ -39,3 +48,5 @@
 </div>
 
 {% endblock %}
+
+
