@@ -6,10 +6,11 @@ from .models import Team
 class TeamAdmin(admin.ModelAdmin):
 
     list_display = (
-        u'team_id',
         'team_name',
         'player_one_name',
-        'player_two_name'
+        'player_one_email',
+        'player_two_name',
+        'player_two_email'
     )
 
 admin.site.register(Team , TeamAdmin)
