@@ -1,2 +1,2 @@
-### jcc-registration-portal
-A simple registration portal for JuniorCodeCracker
+### JUNIOR CODECRACKER REGISTRATION PORTAL
+Registration portal for JuniorCodeCracker
