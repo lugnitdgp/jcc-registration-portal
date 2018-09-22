@@ -13,15 +13,15 @@ function getRandom(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-// configrations 
+// configrations
 var fontSize = 20,
 	color = '#00FF98',
-	background = 'rgba(2, 2, 33, 0.2)',
+	background = 'rgba(0, 0, 0, 0.3)',
 	speed = 125;
 	charSet = "JCC 11111100010";
 	charSet = charSet.split('');
 
-// calculations 
+// calculations
 var matrixWidth = matrixWidth,
 	matrixHeight = matrixHeight,
 	columns = matrixWidth/fontSize,

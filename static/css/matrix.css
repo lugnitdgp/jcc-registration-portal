@@ -1,20 +1,18 @@
 body {
-    /* background-color: rgb(62, 62, 86); */
-    background-color: rgb(2, 2, 33);
+    background-color: #000;
 }
 .hide {
     display: none;
 }
 #matrix {
-    /* background-color: rgb(62, 62, 86); */
-    background-color: rgb(2, 2, 33);
-    position: absolute;
-	animation: blur 10s infinite;
+    background-color: #000;
+    position: fixed;
+	  animation: blur 10s infinite;
     animation-delay: 10s;
     z-index: -1;
 }
-		
-/* @keyframes blur 
+
+/* @keyframes blur
 	0%
 		filter: url(#blur-horizontal)
 	2%

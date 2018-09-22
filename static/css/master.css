@@ -8,7 +8,8 @@
 } */
 
 body .container{
-  max-height: 100vh;
+  height: 100vh;
+  width: 100vw;
   position: relative;
   background-size: cover;
   background-blend-mode: darken;
@@ -16,13 +17,22 @@ body .container{
   color:white;
 }
 
+.heading-1{
+  text-shadow: 0 0 0.2vh #fff, 0 0 0.5vh #fff, 0 0 2vh #00FF98;
+}
+
 form{
-  background: rgba(255,255,255,.2);
+  background: rgba(0, 255, 152, .2);
   font-size: 0.7rem;
 }
-input{ 
+input{
   margin: 0.5rem;
 }
 .reg-suc{
   margin-top:40vh;
+}
+.SUBMIT-BTN:hover{
+  border-color:black;
+  background: black;
+  color:#00FF98;
 }

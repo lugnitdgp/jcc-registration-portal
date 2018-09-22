@@ -4,7 +4,7 @@
 
 <div class="container align-middle">
     <br>
-    <h3 class="text-center mt-md-5">Junior Code Cracker 2K18</h3>
+    <h3 class="text-center mt-md-0  heading-1">Junior Code Cracker 2K18</h3>
     {% if is_team_name_taken == True %}
 
     <div class="alert alert-info" role="alert">
@@ -13,50 +13,50 @@
 
     {% endif %}
     <br>
-    <form method="post" action="{% url 'index' %}" id="user_reg" class="mt-4 p-3">
+    <form method="post" action="{% url 'index' %}" id="user_reg" class="mt-4 p-5 mb-4 pb-0">
         {% csrf_token %}
         <div class="row">
-            <div class="col">
+            <div class="col-md-6 col-xs-12 p-0">
                 <label>Team Handle :</label>
             </div>
-            <div class="col">
+            <div class="col-md-6 col-xs-12 p-0">
                 {{ form.team_name }}
             </div>
         </div>
 
         <div class="row">
-            <div class="col">
+            <div class="col-md-6 col-xs-12 p-0">
                 <label>Participant 1 Name :</label>
             </div>
-            <div class="col">
+            <div class="col-md-6 col-xs-12 p-0">
                 {{ form.player_one_name }}
             </div>
         </div>
 
 
         <div class="row">
-            <div class="col">
+            <div class="col-md-6 col-xs-12 p-0">
                 <label>Participant 1 Email ID :</label>
             </div>
-            <div class="col">
+            <div class="col-md-6 col-xs-12 p-0">
                 {{ form.player_one_email }}
             </div>
         </div>
 
         <div class="row">
-            <div class="col">
+            <div class="col-md-6 col-xs-12 p-0">
                 <label>Participant 1 Contact :</label>
             </div>
-            <div class="col">
+            <div class="col-md-6 col-xs-12 p-0">
                 {{ form.player_one_contact }}
             </div>
         </div>
 
         <div class="row">
-            <div class="col">
+            <div class="col-md-6 col-xs-12 p-0">
                 <label>Participant 1 Hall No. :</label>
             </div>
-            <div class="col">
+            <div class="col-md-6 col-xs-12 p-0">
                 {{ form.player_one_hall }}
             </div>
         </div>
@@ -64,37 +64,37 @@
 
 
         <div class="row">
-            <div class="col">
+            <div class="col-md-6 col-xs-12 p-0">
                 <label>Participant 2 Name :</label>
             </div>
-            <div class="col">
+            <div class="col-md-6 col-xs-12 p-0">
                 {{ form.player_two_name }}
             </div>
         </div>
 
         <div class="row">
-            <div class="col">
+            <div class="col-md-6 col-xs-12 p-0">
                 <label>Participant 2 Email ID :</label>
             </div>
-            <div class="col">
+            <div class="col-md-6 col-xs-12 p-0">
                 {{ form.player_two_email }}
             </div>
         </div>
 
         <div class="row">
-            <div class="col">
+            <div class="col-md-6 col-xs-12 p-0">
                 <label>Participant 2 Contact :</label>
             </div>
-            <div class="col">
+            <div class="col-md-6 col-xs-12 p-0">
                 {{ form.player_two_contact }}
             </div>
         </div>
 
         <div class="row">
-            <div class="col">
+            <div class="col-md-6 col-xs-12 p-0">
                 <label>Participant 2 Hall No. :</label>
             </div>
-            <div class="col">
+            <div class="col-md-6 col-xs-12 p-0">
                 {{ form.player_two_hall }}
             </div>
         </div>
@@ -103,7 +103,7 @@
 
         <br>
         <div class="text-center">
-            <input type="submit" class="btn btn-light" name="register" value="Submit!">
+            <input type="submit" class="btn btn-light SUBMIT-BTN" name="register" value="Submit!">
         </div>
     </form>
 </div>
