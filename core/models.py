@@ -21,6 +21,7 @@ class Team(models.Model):
     player_two_contact = models.BigIntegerField(blank=True, null=True)
     player_two_hall = models.IntegerField(blank=True, null=True)
     timestamp = models.DateTimeField(default=timezone.now)
+    unique_team_id = models.CharField(max_length=255, blank=True, null=True)
 
     def __str__(self):
         return str(self.team_name)
