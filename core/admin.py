@@ -8,6 +8,7 @@ class TeamAdmin(admin.ModelAdmin):
 
     list_display = (
         'team_name',
+        'unique_team_id',
         'player_one_name',
         'player_one_email',
         'player_one_hall',
