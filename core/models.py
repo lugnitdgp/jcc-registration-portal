@@ -12,13 +12,13 @@ class Team(models.Model):
         max_length=255, default="No Player Assigned")
     player_one_email = models.EmailField(
         max_length=255, default="No Email Provided")
-    player_one_contact = models.IntegerField(blank=True, null=True)
+    player_one_contact = models.BigIntegerField(blank=True, null=True)
     player_one_hall = models.IntegerField(blank=True, null=True)
     player_two_name = models.CharField(
         max_length=255, default="No Player Assigned")
     player_two_email = models.EmailField(
         max_length=255, default="No Email Provided")
-    player_two_contact = models.IntegerField(blank=True, null=True)
+    player_two_contact = models.BigIntegerField(blank=True, null=True)
     player_two_hall = models.IntegerField(blank=True, null=True)
     timestamp = models.DateTimeField(default=timezone.now)
 
