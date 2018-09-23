@@ -7,7 +7,7 @@ body {
 #matrix {
     background-color: #000;
     position: fixed;
-	  animation: blur 10s infinite;
+	animation: blur 10s infinite;
     animation-delay: 10s;
     z-index: -1;
 }
