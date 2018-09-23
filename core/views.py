@@ -16,8 +16,10 @@ def index(request):
             team_name = request.POST['team_name']
             player_one_contact = request.POST['player_one_contact']
             player_two_contact = request.POST['player_two_contact']
+            player_one_email = request.POST['player_one_email']
+            player_two_email = request.POST['player_two_email']
 
-            team = Team.objects.filter(team_name=team_name).first()
+            team = Team.objects.filter(player_one_email=player_one_email , player_two_email=player_two_email).first()
 
             if not team:
                 unique_team_id = service.generate(team_name + player_one_contact + player_two_contact)
