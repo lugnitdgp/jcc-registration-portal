@@ -1,2 +1,2 @@
 ### JUNIOR CODECRACKER REGISTRATION PORTAL
-Registration portal for JuniorCodeCracker
+A Registration portal for JuniorCodeCracker 2018 in Django 1.11
