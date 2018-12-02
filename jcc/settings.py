@@ -24,9 +24,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', default=True , cast=bool)
+DEBUG = config('DEBUG', default=True, cast=bool)
 
-ALLOWED_HOSTS = ['127.0.0.1','localhost','jcc.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'jcc.pythonanywhere.com']
 
 # Application definition
 
@@ -52,7 +52,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'jcc.urls'
 
-TEMPLATE_PATH = os.path.join(BASE_DIR , 'templates')
+TEMPLATE_PATH = os.path.join(BASE_DIR, 'templates')
 
 TEMPLATES = [
     {
@@ -78,12 +78,8 @@ WSGI_APPLICATION = 'jcc.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'jcc',
-        'USER': 'root',
-        'PASSWORD':'12345',
-        'HOST':'localhost',
-        'PORT':''
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -127,8 +123,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR , 'static'),
+    os.path.join(BASE_DIR, 'static'),
 )
 
-STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR) , "static_root")
-
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_root")

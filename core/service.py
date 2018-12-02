@@ -3,7 +3,7 @@ import hashlib
 import requests
 
 BASE = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-auth_key = '144872AoGnBaVgqLh59f59619'
+auth_key = None # Get Auth Key from environment vars using decouple
 url = 'http://sms.globehost.com/api/sendhttp.php?'
 
 
@@ -26,9 +26,10 @@ def generate(alphanum):
     return short
 
 
-def send_message(team_name , team_id , contact):
+def send_message(team_name, team_id, contact):
 
-    message = 'Your unique team ID for Junior Code Cracker 2k18 is ' + team_id + '.Kindly take note and submit this at the event.'
+    message = 'Your unique team ID for Junior Code Cracker 2k18 is ' + \
+        team_id + '.Kindly take note and submit this at the event.'
 
     data = {
         'authkey': auth_key,
@@ -42,7 +43,3 @@ def send_message(team_name , team_id , contact):
     r = requests.get(url + data_encoded)
     print('Message Sent Successfully !!')
     return r.status_code
-
-
-
-
