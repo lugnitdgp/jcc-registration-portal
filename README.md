@@ -15,3 +15,7 @@ A Registration portal for JuniorCodeCracker 2018 in Django 1.11
 ## Screenshots :
 
 <img src="https://github.com/JayjeetAtGithub/jcc-registration-portal/blob/master/screenshots/img.png" alt="Screenshot">
+
+## Contributing :
+
+<i>Join this gitter channel https://gitter.im/JCC-Registration-Portal-KWOC/Lobby?source=orgpage to get started !</i>
