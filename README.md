@@ -18,4 +18,4 @@ A Registration portal for JuniorCodeCracker 2018 in Django 1.11
 
 ## Contributing :
 
-<i>Join this gitter channel https://gitter.im/JCC-Registration-Portal-KWOC/Lobby?source=orgpage to get started !</i>
+<i>Join this gitter channel https://gitter.im/JCC-Registration-Portal-KWOC/Lobby to get started !</i>
