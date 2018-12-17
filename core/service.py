@@ -1,9 +1,9 @@
-import urllib
+from urllib.parse import urlencode
 import hashlib
 import requests
 
 BASE = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-auth_key = None # Get Auth Key from environment vars using decouple
+auth_key = None  # Get Auth Key from environment vars using decouple
 url = 'http://sms.globehost.com/api/sendhttp.php?'
 
 
@@ -39,7 +39,7 @@ def send_message(team_name, team_id, contact):
         'route': '4',
     }
 
-    data_encoded = urllib.urlencode(data)
+    data_encoded = urlencode(data)
     r = requests.get(url + data_encoded)
     print('Message Sent Successfully !!')
     return r.status_code
