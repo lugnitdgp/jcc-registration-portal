@@ -26,8 +26,11 @@ form{
   font-size: 0.7rem;
 }
 input{
-  margin: 0.5rem;
+  margin: 0;
+  padding: 0;
+
 }
+
 .reg-suc{
   margin-top:40vh;
 }
