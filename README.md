@@ -24,3 +24,11 @@ A Registration portal for JuniorCodeCracker 2018 in Django 1.11
 ## Contributing :
 
 <i>Join this gitter channel https://gitter.im/JCC-Registration-Portal-KWOC/Lobby to get started !</i>
+
+## Contributors :
+
+* [Jayjeet Chakraborty](https://github.com/JayjeetAtGithub)
+* [Dinesh Bhagat](https://github.com/rapperdinesh)
+* [Sudipta Pandit](https://github.com/realsdx)
+* [Archana Choudhary](https://github.com/arc9693)
+
