@@ -44,7 +44,7 @@ def index(request):
                 service.send_message(
                     team_name, unique_team_id, player_two_contact)
 
-                return render(request, 'success.html')
+                return render(request, 'success.html',{'unique_team_id':unique_team_id})
 
             else:
                 is_team_name_taken = True
