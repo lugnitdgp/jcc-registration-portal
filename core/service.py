@@ -1,9 +1,10 @@
 from urllib.parse import urlencode
+from decouple import config
 import hashlib
 import requests
 
 BASE = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-auth_key = None  # Get Auth Key from environment vars using decouple
+auth_key = config('SECRET_KEY')
 url = 'http://sms.globehost.com/api/sendhttp.php?'
 
 
