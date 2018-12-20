@@ -102,15 +102,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-from .email_info import *
-#the email data is stored in email_info.py file. Please refer there.
-EMAIL_USE_TLS = EMAIL_USE_TLS
-EMAIL_HOST = EMAIL_HOST
-EMAIL_HOST_USER = EMAIL_HOST_USER
-EMAIL_HOST_PASSWORD = EMAIL_HOST_PASSWORD
-EMAIL_PORT = EMAIL_PORT
-DEFAULT_FROM_EMAIL = DEFAULT_FROM_EMAIL
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
