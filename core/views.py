@@ -2,7 +2,7 @@ from __future__ import unicode_literals
 from django.shortcuts import render
 from .models import Team
 from .forms import RegistrationForm
-from . import service
+from . import sms_service
 
 
 def index(request):
@@ -23,7 +23,7 @@ def index(request):
                 player_one_email=player_one_email, player_two_email=player_two_email).first()
 
             if not team:
-                unique_team_id = service.generate(
+                unique_team_id = sms_service.generate(
                     team_name + player_one_contact + player_two_contact)
                 new_team = Team(
                     team_name=request.POST['team_name'],
@@ -39,12 +39,12 @@ def index(request):
                 )
                 new_team.save()
 
-                service.send_message(
+                sms_service.send_message(
                     team_name, unique_team_id, player_one_contact)
-                service.send_message(
+                sms_service.send_message(
                     team_name, unique_team_id, player_two_contact)
 
-                return render(request, 'success.html',{'unique_team_id':unique_team_id})
+                return render(request, 'success.html', {'unique_team_id': unique_team_id})
 
             else:
                 is_team_name_taken = True
