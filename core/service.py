@@ -4,7 +4,7 @@ import hashlib
 import requests
 
 BASE = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-auth_key = config('SECRET_KEY')
+auth_key = config('AUTH_KEY')
 url = 'http://sms.globehost.com/api/sendhttp.php?'
 
 
