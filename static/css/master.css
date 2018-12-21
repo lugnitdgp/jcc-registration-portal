@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Aleo');
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 /* body{
   background-image: url("../images/image1.jpg");
@@ -28,6 +29,7 @@ form{
 input{
   margin: 0;
   padding: 0;
+  font-family: 'Aleo', serif;
 
 }
 
