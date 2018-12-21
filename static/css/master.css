@@ -32,6 +32,9 @@ input{
   font-family: 'Aleo', serif;
 
 }
+select{
+  font-family: 'Aleo', serif;
+}
 
 .reg-suc{
   margin-top:40vh;
