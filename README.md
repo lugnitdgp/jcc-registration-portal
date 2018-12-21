@@ -29,6 +29,7 @@ A Registration portal for JuniorCodeCracker 2018 in Django 1.11
 
 * [Jayjeet Chakraborty](https://github.com/JayjeetAtGithub)
 * [Dinesh Bhagat](https://github.com/rapperdinesh)
+* [kartik1000](https://github.com/kartik1000)
 * [Sudipta Pandit](https://github.com/realsdx)
 * [Archana Choudhary](https://github.com/arc9693)
 
