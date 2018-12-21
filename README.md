@@ -1,5 +1,6 @@
 # JUNIOR CODECRACKER REGISTRATION PORTAL
-A Registration portal for JuniorCodeCracker 2018 in Django 1.11
+
+> A Registration portal for JuniorCodeCracker 2018 in Django 1.11
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 [![](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/JCC-Registration-Portal-KWOC/Lobby)
