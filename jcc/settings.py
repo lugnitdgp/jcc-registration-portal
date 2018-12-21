@@ -103,6 +103,15 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+#for any host make neccesary changes and change email-backend from 'console' to 'smtp' 
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = 1025
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = False
+DEFAULT_FROM_EMAIL = 'testing@gmail.com'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
