@@ -102,15 +102,16 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# Email SMTP Settings
+# https://medium.com/@_christopher/how-to-send-emails-with-python-django-through-google-smtp-server-for-free-22ea6ea0fb8e
 
-#for any host make neccesary changes and change email-backend from 'console' to 'smtp' 
-EMAIL_HOST = 'localhost'
-EMAIL_PORT = 1025
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
-EMAIL_USE_TLS = False
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = config('EMAIL')
+EMAIL_HOST_PASSWORD = config('PASSWORD')
+EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = 'testing@gmail.com'
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
