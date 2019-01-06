@@ -69,3 +69,7 @@ def index(request):
     context = {'form': form, 'is_team_name_taken': is_team_name_taken}
     return render(request, 'register.html', context)
 
+
+def Team_List(request):
+    all_teams = Team.objects.all()
+    return render(request, "team.html", {'Teams': all_teams})
