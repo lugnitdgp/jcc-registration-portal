@@ -1,19 +1,22 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1 class="text-center mt-md-0  heading-1">Junior Code Cracker 2K18</h1>
-<br>
 <br>
 <h2 class="text-center mt-md-0  heading-1">Already Registered Teams</h2>
 <br>
 <br>
-<table bgcolor="white" width=80% align='center'>
-<tr><th>Team Name</th>
-  <th>Player One</th>
-  <th>Player Two</th></tr>
-{% for team in Teams %}
-  <tr><td>{{ team.team_name }}</td>
+<table class="table table-striped table-dark">
+  <tr>
+    <th>Team Name</th>
+    <th>Player One</th>
+    <th>Player Two</th>
+  </tr>
+  {% for team in Teams %}
+  <tr>
+    <td>{{ team.team_name }}</td>
     <td>{{ team.player_one_name}}</td>
-    <td>{{ team.player_two_name}}</td></tr>
-{% endfor %}
+    <td>{{ team.player_two_name}}</td>
+  </tr>
+  {% endfor %}
 </table>
 {% endblock %}
+

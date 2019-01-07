@@ -45,11 +45,9 @@ select{
   background: black;
   color:#00FF98;
 }
-tr:nth-child(odd) {
-  background-color: #a7b4c9;
-}
 
-tr:nth-child(even) {
-  background-color: #f2f2f2
+table{
+  width: 80vw!important;
+  margin: 5vh auto!important;
 }
 
