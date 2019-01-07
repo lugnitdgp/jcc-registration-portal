@@ -20,6 +20,7 @@ body .container{
 
 .heading-1{
   text-shadow: 0 0 0.2vh #fff, 0 0 0.5vh #fff, 0 0 2vh #00FF98;
+  font-family: 'Press Start 2P', cursive;
 }
 
 form{
@@ -44,3 +45,11 @@ select{
   background: black;
   color:#00FF98;
 }
+tr:nth-child(odd) {
+  background-color: #a7b4c9;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
