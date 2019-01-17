@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>JCC 2K18</title>
+    <title>JCC 2K19</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="{% static 'css/matrix.css' %}">
     <style>
         .footer {
-            position: absolute;
-            font-size: 16px;
+            position: fixed;
+            font-size: 20px;
             left: 0;
             bottom: 0;
             width: 100%;
@@ -51,6 +51,12 @@
             /* background: #3B5998; */
             color: white;
         }
+
+        @media only screen and (max-width: 600px) {
+            .footer {
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -75,4 +81,3 @@
 </body>
 
 </html>
-
