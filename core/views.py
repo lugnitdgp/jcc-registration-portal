@@ -42,23 +42,25 @@ def index(request):
                 )
                 new_team.save()
 
-                sms_service.send_message(
-                    team_name, unique_team_id, player_one_contact)
-                sms_service.send_message(
-                    team_name, unique_team_id, player_two_contact)
+                if settings.SMS_ENABLED:
+                    try:
+                        sms_service.send_message(
+                            team_name, unique_team_id, player_one_contact)
+                        sms_service.send_message(
+                            team_name, unique_team_id, player_two_contact)
+                    except Exception as e:
+                        pass
 
-                # **** To send confirmation email to both players ****
+                try:
+                    send_mail(
+                        'Successfull Registration in JCC',
+                        'Congratulations, You have succesfully registered for JUNIOR CODECRACKER!!! BEST OF LUCK',
+                        settings.DEFAULT_FROM_EMAIL,
+                        [player_one_email, player_two_email],
+                    )
+                except Exception as e:
+                    pass
 
-                # send_email(subject, message, from_email, to_list, fail_silently=TRUE)
-
-                send_mail(
-                    'Successfull Registration in JCC',
-                    'Congratulations, You have succesfully registered for JUNIOR CODECRACKER!!! BEST OF LUCK',
-                    settings.DEFAULT_FROM_EMAIL,
-                    [player_one_email, player_two_email],
-                )
-
-                # **** Email part ends here ****
                 return render(request, 'success.html', {'unique_team_id': unique_team_id})
 
             else:
@@ -73,3 +75,4 @@ def index(request):
 def Team_List(request):
     all_teams = Team.objects.all()
     return render(request, "team.html", {'Teams': all_teams})
+
