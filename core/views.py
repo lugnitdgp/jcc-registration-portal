@@ -23,7 +23,8 @@ def index(request):
             player_two_email = request.POST['player_two_email']
 
             team = Team.objects.filter(
-                player_one_email=player_one_email, player_two_email=player_two_email).first()
+                player_one_email=player_one_email,
+                player_two_email=player_two_email).first()
 
             if not team:
                 unique_team_id = sms_service.generate(
@@ -61,7 +62,9 @@ def index(request):
                 except Exception as e:
                     pass
 
-                return render(request, 'success.html', {'unique_team_id': unique_team_id})
+                return render(
+                    request, 'success.html', {
+                        'unique_team_id': unique_team_id})
 
             else:
                 is_team_name_taken = True
@@ -75,4 +78,3 @@ def index(request):
 def Team_List(request):
     all_teams = Team.objects.all()
     return render(request, "team.html", {'Teams': all_teams})
-

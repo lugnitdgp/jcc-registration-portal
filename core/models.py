@@ -26,4 +26,3 @@ class Team(models.Model):
 
     def __str__(self):
         return str(self.team_name)
-        

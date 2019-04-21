@@ -44,4 +44,3 @@ def send_message(team_name, team_id, contact):
     r = requests.get(url + data_encoded)
     print('Message Sent Successfully !!')
     return r.status_code
-
